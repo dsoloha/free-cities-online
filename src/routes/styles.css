@@ -4,30 +4,36 @@
 	--font-body: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
 		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--font-mono: 'Fira Mono', monospace;
-	--color-bg-0: rgb(202, 216, 228);
-	--color-bg-1: hsl(209, 36%, 86%);
-	--color-bg-2: hsl(224, 44%, 95%);
-	--color-theme-1: #ff3e00;
-	--color-theme-2: #40b3ff;
-	--color-text: rgba(0, 0, 0, 0.7);
+
+	--light-focus: white;
+	--light-bg: hsl(210, 10%, 95%);
+	--light-border: hsl(210, 10%, 80%);
+	--light-accent: hsl(210, 10%, 75%);
+	--light-text: hsl(210, 10%, 15%);
+	--light-link: hsl(210, 10%, 25%);
+	--light-link-hover: hsl(210, 10%, 35%);
+
+	--dark-focus: black;
+	--dark-bg: hsl(210, 10%, 5%);
+	--dark-border: hsl(210, 10%, 20%);
+	--dark-accent: hsl(210, 10%, 25%);
+	--dark-text: hsl(210, 10%, 85%);
+	--dark-link: hsl(210, 10%, 75%);
+	--dark-link-hover: hsl(210, 10%, 65%);
+
 	--column-width: 42rem;
 	--column-margin-top: 4rem;
+
 	font-family: var(--font-body);
-	color: var(--color-text);
+	color: var(--light-text);
 }
 
 body {
 	min-height: 100vh;
 	margin: 0;
 	background-attachment: fixed;
-	background-color: var(--color-bg-1);
+	background-color: var(--light-bg);
 	background-size: 100vw 100vh;
-	background-image: radial-gradient(
-			50% 50% at 50% 50%,
-			rgba(255, 255, 255, 0.75) 0%,
-			rgba(255, 255, 255, 0) 100%
-		),
-		linear-gradient(180deg, var(--color-bg-0) 0%, var(--color-bg-1) 15%, var(--color-bg-2) 50%);
 }
 
 h1,
@@ -41,11 +47,12 @@ p {
 }
 
 a {
-	color: var(--color-theme-1);
+	color: var(--light-link);
 	text-decoration: none;
 }
 
 a:hover {
+	color: var(--light-link-hover);
 	text-decoration: underline;
 }
 
@@ -66,7 +73,6 @@ pre {
 	box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
 	padding: 0.5em;
 	overflow-x: auto;
-	color: var(--color-text);
 }
 
 .text-column {
@@ -91,5 +97,23 @@ button:focus:not(:focus-visible) {
 @media (min-width: 720px) {
 	h1 {
 		font-size: 2.4rem;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		color: var(--dark-text);
+	}
+
+	body {
+		background-color: var(--dark-bg);
+	}
+
+	a {
+		color: var(--dark-link);
+	}
+
+	a:hover {
+		color: var(--dark-link-hover);
 	}
 }
