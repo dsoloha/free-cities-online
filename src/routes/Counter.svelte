@@ -37,8 +37,8 @@
 <style>
 	.counter {
 		display: flex;
-		border-top: 1px solid rgba(0, 0, 0, 0.1);
-		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		border-top: 1px solid var(--light-accent);
+		border-bottom: 1px solid var(--light-accent);
 		margin: 1rem 0;
 	}
 
@@ -55,7 +55,7 @@
 	}
 
 	.counter button:hover {
-		background-color: var(--color-bg-1);
+		background-color: var(--light-accent);
 	}
 
 	svg {
@@ -83,7 +83,7 @@
 		width: 100%;
 		height: 100%;
 		font-weight: 400;
-		color: var(--color-theme-1);
+		color: var(--light-text);
 		font-size: 4rem;
 		align-items: center;
 		justify-content: center;
@@ -98,5 +98,20 @@
 	.hidden {
 		top: -100%;
 		user-select: none;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.counter {
+			border-top: 1px solid var(--dark-accent);
+			border-bottom: 1px solid var(--dark-accent);
+		}
+
+		.counter button:hover {
+			background-color: var(--dark-accent);
+		}
+
+		.counter-viewport strong {
+			color: var(--dark-text);
+		}
 	}
 </style>
