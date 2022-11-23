@@ -65,11 +65,11 @@
 
 	.close {
 		border-style: solid;
-		border-color: var(--color-theme-2);
+		border-color: var(--light-border);
 	}
 
 	.exact {
-		background: var(--color-theme-2);
+		background: var(--light-accent);
 		color: white;
 	}
 
@@ -91,5 +91,16 @@
 		font-size: 0.4em;
 		transform: scale(2) translate(0, -10%);
 		margin: 0 1em;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.close {
+			border-color: var(--dark-border);
+		}
+
+		.exact {
+			background: var(--dark-accent);
+			color: black;
+		}
 	}
 </style>

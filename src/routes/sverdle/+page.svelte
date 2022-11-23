@@ -46,9 +46,7 @@
 	 */
 	function update(event: MouseEvent) {
 		const guess = data.guesses[i];
-		const key = (event.target as HTMLButtonElement).getAttribute(
-			'data-key'
-		);
+		const key = (event.target as HTMLButtonElement).getAttribute('data-key');
 
 		if (key === 'backspace') {
 			data.guesses[i] = guess.slice(0, -1);
@@ -180,10 +178,6 @@
 		flex: 1;
 	}
 
-	.how-to-play {
-		color: var(--color-text);
-	}
-
 	.how-to-play::before {
 		content: 'i';
 		display: inline-block;
@@ -193,7 +187,7 @@
 		height: 1em;
 		padding: 0.2em;
 		line-height: 1;
-		border: 1.5px solid var(--color-text);
+		border: 1.5px solid var(--light-border);
 		border-radius: 50%;
 		text-align: center;
 		margin: 0 0.5em 0 0;
@@ -225,7 +219,7 @@
 	}
 
 	.grid.playing .row.current {
-		filter: drop-shadow(3px 3px 10px var(--color-bg-0));
+		filter: drop-shadow(3px 3px 10px var(--light-accent));
 	}
 
 	input {
@@ -251,12 +245,12 @@
 	}
 
 	input.exact {
-		background: var(--color-theme-2);
+		background: var(--light-accent);
 		color: white;
 	}
 
 	input.close {
-		border: 2px solid var(--color-theme-2);
+		border: 2px solid var(--light-border);
 	}
 
 	input:focus {
@@ -264,12 +258,12 @@
 	}
 
 	[aria-selected='true'] {
-		outline: 2px solid var(--color-theme-1);
+		outline: 2px solid var(--light-text);
 	}
 
 	input:not(:disabled)::selection {
 		background: transparent;
-		color: var(--color-theme-1);
+		color: var(--light-text);
 	}
 
 	.controls {
@@ -307,7 +301,7 @@
 	}
 
 	.keyboard button.exact {
-		background: var(--color-theme-2);
+		background: var(--light-accent);
 		color: white;
 	}
 
@@ -316,11 +310,11 @@
 	}
 
 	.keyboard button.close {
-		border: 2px solid var(--color-theme-2);
+		border: 2px solid var(--light-border);
 	}
 
 	.keyboard button:focus {
-		background: var(--color-theme-1);
+		background: var(--light-text);
 		color: white;
 		outline: none;
 	}
@@ -358,7 +352,7 @@
 
 	.restart:focus,
 	.restart:hover {
-		background: var(--color-theme-1);
+		background: var(--light-text);
 		color: white;
 		outline: none;
 	}
@@ -384,6 +378,49 @@
 		}
 		100% {
 			transform: translateX(0);
+		}
+	}
+
+	@media (prefers-color-scheme: dark) {
+		input.exact {
+			background: var(--dark-accent);
+			color: black;
+		}
+
+		input.close {
+			border: 2px solid var(--dark-border);
+		}
+
+		[aria-selected='true'] {
+			outline: 2px solid var(--dark-text);
+		}
+
+		input:not(:disabled)::selection {
+			color: var(--dark-text);
+		}
+
+		.keyboard button.close {
+			border: 2px solid var(--dark-border);
+		}
+
+		.keyboard button:focus {
+			background: var(--dark-text);
+			color: black;
+		}
+
+		.restart:focus,
+		.restart:hover {
+			background: var(--dark-text);
+			color: black;
+			outline: none;
+		}
+
+		.grid.playing .row.current {
+			filter: drop-shadow(3px 3px 10px var(--dark-accent));
+		}
+
+		.how-to-play::before {
+			border: 1.5px solid var(--dark-border);
 		}
 	}
 </style>
