@@ -65,7 +65,7 @@
 
 	.close {
 		border-style: solid;
-		border-color: var(--light-accent);
+		border-color: var(--light-border);
 	}
 
 	.exact {
@@ -95,7 +95,7 @@
 
 	@media (prefers-color-scheme: dark) {
 		.close {
-			border-color: var(--dark-accent);
+			border-color: var(--dark-border);
 		}
 
 		.exact {

@@ -37,8 +37,8 @@
 <style>
 	.counter {
 		display: flex;
-		border-top: 1px solid var(--light-accent);
-		border-bottom: 1px solid var(--light-accent);
+		border-top: 1px solid var(--light-border);
+		border-bottom: 1px solid var(--light-border);
 		margin: 1rem 0;
 	}
 
@@ -102,8 +102,8 @@
 
 	@media (prefers-color-scheme: dark) {
 		.counter {
-			border-top: 1px solid var(--dark-accent);
-			border-bottom: 1px solid var(--dark-accent);
+			border-top: 1px solid var(--dark-border);
+			border-bottom: 1px solid var(--dark-border);
 		}
 
 		.counter button:hover {
