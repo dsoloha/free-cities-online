@@ -11,7 +11,8 @@
 	--light-accent: hsl(210, 10%, 75%);
 	--light-text: hsl(210, 10%, 15%);
 	--light-link: hsl(210, 10%, 25%);
-	--light-link-hover: hsl(210, 10%, 35%);
+	--light-link-hover: hsl(210, 10%, 15%);
+	--light-link-inactive: hsl(210, 10%, 45%);
 
 	--dark-focus: black;
 	--dark-bg: hsl(210, 10%, 5%);
@@ -19,7 +20,8 @@
 	--dark-accent: hsl(210, 10%, 25%);
 	--dark-text: hsl(210, 10%, 85%);
 	--dark-link: hsl(210, 10%, 75%);
-	--dark-link-hover: hsl(210, 10%, 65%);
+	--dark-link-hover: hsl(210, 10%, 85%);
+	--dark-link-inactive: hsl(210, 10%, 55%);
 
 	--column-width: 42rem;
 	--column-margin-top: 4rem;
