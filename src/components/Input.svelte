@@ -1,5 +1,29 @@
 <script lang="ts">
-	export let type = 'text';
+	type InputType =
+		| 'button'
+		| 'checkbox'
+		| 'color'
+		| 'date'
+		| 'datetime-local'
+		| 'email'
+		| 'file'
+		| 'hidden'
+		| 'image'
+		| 'month'
+		| 'number'
+		| 'password'
+		| 'radio'
+		| 'range'
+		| 'reset'
+		| 'search'
+		| 'submit'
+		| 'tel'
+		| 'text'
+		| 'time'
+		| 'url'
+		| 'week';
+
+	export let type: InputType = 'text';
 	export let name: string;
 	export let placeholder = '';
 	export let width = 100;
