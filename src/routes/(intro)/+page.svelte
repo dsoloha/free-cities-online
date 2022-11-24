@@ -1,12 +1,18 @@
+<script>
+	import SignupForm from './SignupForm.svelte';
+</script>
+
 <svelte:head>
-	<title>Home</title>
+	<title>Home | Free Cities Online</title>
 	<meta name="description" content="Free Cities Online" />
 </svelte:head>
 
 <section>
 	<h1>Free Cities Online</h1>
 
-	<h2>This site is very much under construction. Please check back soon.</h2>
+	<SignupForm />
+
+	<p>This site is currently under active development. Check back soon!</p>
 </section>
 
 <style>
@@ -20,5 +26,9 @@
 
 	h1 {
 		width: 100%;
+	}
+
+	p {
+		text-align: center;
 	}
 </style>
