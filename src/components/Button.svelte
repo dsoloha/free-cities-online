@@ -22,6 +22,7 @@
 	button:hover {
 		background-color: black;
 		border-color: black;
+		color: var(--dark-text);
 	}
 
 	button.focus {
