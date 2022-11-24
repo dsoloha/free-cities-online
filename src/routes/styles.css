@@ -1,0 +1,127 @@
+@import '@fontsource/fira-mono';
+
+:root {
+	--font-body: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	--font-mono: 'Fira Mono', monospace;
+
+	--light-focus: white;
+	--light-bg: hsl(210, 10%, 95%);
+	--light-border: hsl(210, 10%, 80%);
+	--light-accent: hsl(210, 10%, 75%);
+	--light-text: hsl(210, 10%, 15%);
+	--light-link: hsl(210, 10%, 25%);
+	--light-link-hover: hsl(210, 10%, 15%);
+	--light-link-inactive: hsl(210, 10%, 45%);
+
+	--dark-focus: black;
+	--dark-bg: hsl(210, 10%, 5%);
+	--dark-border: hsl(210, 10%, 20%);
+	--dark-accent: hsl(210, 10%, 25%);
+	--dark-text: hsl(210, 10%, 85%);
+	--dark-link: hsl(210, 10%, 75%);
+	--dark-link-hover: hsl(210, 10%, 85%);
+	--dark-link-inactive: hsl(210, 10%, 55%);
+
+	--column-width: 42rem;
+	--column-margin-top: 4rem;
+
+	font-family: var(--font-body);
+	color: var(--light-text);
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	background-attachment: fixed;
+	background-color: var(--light-bg);
+	background-size: 100vw 100vh;
+}
+
+h1,
+h2,
+p {
+	font-weight: 400;
+}
+
+p {
+	line-height: 1.5;
+}
+
+a {
+	color: var(--light-link);
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--light-link-hover);
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 2rem;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1rem;
+}
+
+pre {
+	font-size: 16px;
+	font-family: var(--font-mono);
+	background-color: rgba(255, 255, 255, 0.45);
+	border-radius: 3px;
+	box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
+	padding: 0.5em;
+	overflow-x: auto;
+}
+
+.text-column {
+	display: flex;
+	max-width: 48rem;
+	flex: 0.6;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+input,
+button {
+	font-size: inherit;
+	font-family: inherit;
+}
+
+button:focus:not(:focus-visible) {
+	outline: none;
+}
+
+@media (min-width: 720px) {
+	h1 {
+		font-size: 2.4rem;
+	}
+}
+
+@media (max-width: 600px) {
+	body {
+		padding: 2em;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		color: var(--dark-text);
+	}
+
+	body {
+		background-color: var(--dark-bg);
+	}
+
+	a {
+		color: var(--dark-link);
+	}
+
+	a:hover {
+		color: var(--dark-link-hover);
+	}
+}
