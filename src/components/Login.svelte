@@ -7,6 +7,7 @@
 	<Input name="username" placeholder="Username" />
 	<Button
 		focus={true}
+		type={'submit'}
 		on:click={() => {
 			return;
 		}}>Sign in</Button
