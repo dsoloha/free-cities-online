@@ -3,9 +3,10 @@
 		return;
 	};
 	export let focus = false;
+	export let type: 'button' | 'submit' | 'reset' = 'button';
 </script>
 
-<button on:click={handler} class:focus>
+<button on:click={handler} class:focus {type}>
 	<slot />
 </button>
 
