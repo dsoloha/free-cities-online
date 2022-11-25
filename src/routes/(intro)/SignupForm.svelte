@@ -6,7 +6,7 @@
 <form>
 	<Input name="username" placeholder="Username" />
 	<Input name="password" placeholder="Password" type="password" />
-	<Button>Sign up</Button>
+	<Button>Go -></Button>
 </form>
 
 <style>
