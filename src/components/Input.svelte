@@ -1,8 +1,8 @@
 <script lang="ts">
-	export let type = 'text';
-	export let name: string;
-	export let placeholder = '';
-	export let width = 100;
+	export let type = 'text'
+	export let name: string
+	export let placeholder = ''
+	export let width = 100
 </script>
 
 <input {type} {name} {placeholder} {width} />

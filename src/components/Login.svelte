@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Button from './Button.svelte';
-	import Input from './Input.svelte';
+	import Button from './Button.svelte'
+	import Input from './Input.svelte'
 </script>
 
 <div>
@@ -9,7 +9,7 @@
 		focus={true}
 		type={'submit'}
 		on:click={() => {
-			return;
+			return
 		}}>Sign in</Button
 	>
 </div>
