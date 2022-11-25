@@ -1,6 +1,6 @@
 <script>
-	import { page } from '$app/stores';
-	import Login from './Login.svelte';
+	import { page } from '$app/stores'
+	import Login from './Login.svelte'
 </script>
 
 <header>
