@@ -11,5 +11,5 @@ well as everyone who put time and effort into making it the best it can be.
 
 ## Fonts
 
-- [Jost*](https://indestructibletype.com/Jost.html)
+- [Jost\*](https://indestructibletype.com/Jost.html)
 - [Manrope](https://www.gent.media/manrope)
