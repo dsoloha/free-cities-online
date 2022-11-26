@@ -1,18 +1,24 @@
 <script>
+	import Section from '$components/Section.svelte'
 	import SignupForm from './SignupForm.svelte'
+	import Spacer from '$components/Spacer.svelte'
 </script>
 
 <svelte:head>
-	<title>Home | Free Cities Online</title>
+	<title>Free Cities Online</title>
 	<meta name="description" content="Free Cities Online" />
 </svelte:head>
 
 <section>
-	<h1>Free Cities Online</h1>
+	<Section>
+		<h1>Free Cities Online</h1>
 
-	<SignupForm />
+		<SignupForm />
 
-	<p>This site is currently under active development. Check back soon!</p>
+		<Spacer />
+
+		<p>This site is currently under active development. Check back soon!</p>
+	</Section>
 </section>
 
 <style>
