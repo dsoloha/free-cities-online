@@ -27,6 +27,7 @@
 
 	button.focus {
 		background-color: black;
+		border-color: black;
 		color: white;
 	}
 
