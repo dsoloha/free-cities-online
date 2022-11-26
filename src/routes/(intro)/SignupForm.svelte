@@ -4,18 +4,18 @@
 </script>
 
 <form>
-	<Input name="username" placeholder="Username" />
-	<Input name="password" placeholder="Password" type="password" />
-	<Button>Go -></Button>
+	<div class="center">
+		<Input name="username" placeholder="Username" />
+		<Input name="password" placeholder="Password" type="password" />
+		<Button>Go -></Button>
+	</div>
 </form>
 
 <style>
-	@media only screen and (max-width: 600px) {
-		form {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-		}
+	form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 </style>

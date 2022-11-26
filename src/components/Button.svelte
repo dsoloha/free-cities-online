@@ -13,10 +13,10 @@
 <style>
 	button {
 		background-color: white;
-		padding: 1em;
+		border-radius: var(--border-radius-small);
 		border: 1px solid var(--light-border);
-		border-radius: 0.5em;
 		color: var(--light-text);
+		padding: 1em;
 	}
 
 	button:hover {
@@ -38,15 +38,15 @@
 
 	@media (prefers-color-scheme: dark) {
 		button {
-			color: var(--dark-text);
 			background-color: black;
 			border-color: var(--dark-border);
+			color: var(--dark-text);
 		}
 
 		button:hover {
 			background-color: white;
-			color: var(--light-text);
 			border-color: black;
+			color: var(--light-text);
 		}
 
 		button.focus {
@@ -56,8 +56,8 @@
 
 		button.focus:hover {
 			background-color: black;
-			color: var(--dark-text);
 			border-color: white;
+			color: var(--dark-text);
 		}
 	}
 </style>

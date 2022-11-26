@@ -10,11 +10,11 @@
 <style>
 	input {
 		background-color: var(--light-focus);
-		border-radius: 0.5em;
+		border-radius: var(--border-radius-small);
 		border: 1px solid var(--light-border);
 		color: var(--light-text);
-		padding: 1em;
 		outline: none;
+		padding: 1em;
 	}
 
 	input:focus {

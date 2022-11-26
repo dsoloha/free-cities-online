@@ -31,6 +31,9 @@
 	--dark-link-hover: hsl(210, 10%, 85%);
 	--dark-link-inactive: hsl(210, 10%, 55%);
 
+	--border-radius-small: 0.5em;
+	--border-radius-large: 0.5em;
+
 	--column-width: 42rem;
 	--column-margin-top: 4rem;
 
@@ -79,19 +82,10 @@ pre {
 	font-size: 16px;
 	font-family: var(--font-mono);
 	background-color: rgba(255, 255, 255, 0.45);
-	border-radius: 3px;
+	border-radius: var(--border-radius-small);
 	box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
 	padding: 0.5em;
 	overflow-x: auto;
-}
-
-.text-column {
-	display: flex;
-	max-width: 48rem;
-	flex: 0.6;
-	flex-direction: column;
-	justify-content: center;
-	margin: 0 auto;
 }
 
 input,
@@ -102,6 +96,21 @@ button {
 
 button:focus:not(:focus-visible) {
 	outline: none;
+}
+
+.center {
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+
+.text-column {
+	display: flex;
+	max-width: 48rem;
+	flex: 0.6;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
 }
 
 @media (max-width: 600px) {
