@@ -22,18 +22,18 @@
 	button:hover {
 		background-color: black;
 		border-color: black;
-		color: var(--dark-text);
+		color: var(--dark-link-hover);
 	}
 
 	button.focus {
 		background-color: black;
-		color: var(--dark-text);
+		color: white;
 	}
 
 	button.focus:hover {
 		background-color: white;
 		border-color: black;
-		color: var(--light-text);
+		color: black;
 	}
 
 	@media (prefers-color-scheme: dark) {
@@ -46,18 +46,18 @@
 		button:hover {
 			background-color: white;
 			border-color: black;
-			color: var(--light-text);
+			color: var(--light-link-hover);
 		}
 
 		button.focus {
 			background-color: white;
-			color: var(--light-text);
+			color: black;
 		}
 
 		button.focus:hover {
 			background-color: black;
 			border-color: white;
-			color: var(--dark-text);
+			color: white;
 		}
 	}
 </style>

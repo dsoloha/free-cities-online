@@ -7,7 +7,7 @@
 	<div class="center">
 		<Input name="username" placeholder="Username" />
 		<Input name="password" placeholder="Password" type="password" />
-		<Button>Go -></Button>
+		<Button focus={true}>Go -></Button>
 	</div>
 </form>
 
