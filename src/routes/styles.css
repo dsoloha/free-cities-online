@@ -117,6 +117,34 @@ button:focus:not(:focus-visible) {
 	body {
 		padding: 2em;
 	}
+
+	h1 {
+		font-size: 2em;
+	}
+}
+
+@media (min-width: 600px) {
+	h1 {
+		font-size: 2.5em;
+	}
+}
+
+@media (min-width: 768px) {
+	h1 {
+		font-size: 3em;
+	}
+}
+
+@media (min-width: 992px) {
+	h1 {
+		font-size: 3.5em;
+	}
+}
+
+@media (min-width: 1200px) {
+	h1 {
+		font-size: 6em;
+	}
 }
 
 @media (prefers-color-scheme: dark) {
