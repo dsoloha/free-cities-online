@@ -61,4 +61,10 @@
 			color: white;
 		}
 	}
+
+	@media (max-width: 600px) {
+		button {
+			width: 100%;
+		}
+	}
 </style>
