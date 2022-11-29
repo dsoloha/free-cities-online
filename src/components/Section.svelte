@@ -19,4 +19,10 @@
 			color: var(--dark-text);
 		}
 	}
+
+	@media (max-width: 600px) {
+		section {
+			padding: 1em 2em;
+		}
+	}
 </style>
