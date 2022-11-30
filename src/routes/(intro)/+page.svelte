@@ -1,7 +1,7 @@
 <script>
-	import Section from '$components/Section.svelte'
+	import Section from '$lib/components/Section.svelte'
 	import SignupForm from './SignupForm.svelte'
-	import Spacer from '$components/Spacer.svelte'
+	import Spacer from '$lib/components/Spacer.svelte'
 </script>
 
 <svelte:head>
