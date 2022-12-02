@@ -1,17 +1,21 @@
 <script>
-	import Header from '$components/Header.svelte'
+	import Header from '$components/Header.svelte';
 	import Footer from '$components/Footer.svelte'
 	import '$lib/styles.css'
+
+	let user = false // currently disabled until I get auth working
 </script>
 
 <div class="app">
-	<Header />
-
+	{#if user}
+		<Header />
+	{/if}
 	<main>
 		<slot />
 	</main>
-
-	<Footer />
+	{#if user}
+		<Footer />
+	{/if}
 </div>
 
 <style>
