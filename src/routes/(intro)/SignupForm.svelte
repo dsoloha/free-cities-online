@@ -15,8 +15,8 @@
 
 <form>
 	<div class="center">
-		<Input name="email" placeholder="email" type="email" />
-		<Input name="password" placeholder="password" type="password" />
+		<Input name="email" placeholder="email" />
+		<Input name="password" placeholder="password" />
 		<Button focus={true}>Go -></Button>
 	</div>
 </form>
