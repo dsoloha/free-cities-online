@@ -1,10 +1,10 @@
 <script lang="ts">
-	export let type = 'text'
 	export let name: string
 	export let placeholder = name
+	export let value: string | number = ''
 </script>
 
-<input {type} {name} {placeholder} />
+<input {name} {placeholder} bind:value />
 
 <style>
 	input {
