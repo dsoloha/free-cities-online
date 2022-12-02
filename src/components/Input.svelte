@@ -1,14 +1,10 @@
 <script lang="ts">
-	export let type = 'text'
 	export let name: string
-<<<<<<< HEAD
 	export let placeholder = name
-=======
-	export let placeholder = ''
->>>>>>> 312eba4 (Slightly improved mobile responsiveness)
+	export let value: string | number = ''
 </script>
 
-<input {type} {name} {placeholder} />
+<input {name} {placeholder} bind:value />
 
 <style>
 	input {
