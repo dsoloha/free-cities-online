@@ -1,6 +1,16 @@
-<script>
+<script lang="ts">
 	import Button from '$components/Button.svelte'
 	import Input from '$components/Input.svelte'
+
+	let email: string
+	let password: string
+
+	async function signUp() {
+		const { data, error } = await supabase.auth.signUp({
+			email: 'example@email.com',
+			password: 'example-password'
+		})
+	}
 </script>
 
 <form>
