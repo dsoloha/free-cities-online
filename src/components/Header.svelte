@@ -1,6 +1,5 @@
 <script>
 	import { page } from '$app/stores'
-	import Login from './Login.svelte'
 </script>
 
 <header>
@@ -29,8 +28,6 @@
 			</li>
 		</ul>
 	</nav>
-
-	<Login />
 </header>
 
 <style>
