@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import '@skeletonlabs/skeleton/themes/theme-skeleton.css'
 	import '@skeletonlabs/skeleton/styles/all.css'
 	import '../theme.postcss'
@@ -6,7 +6,11 @@
 	import '$lib/styles/fonts.css'
 
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton'
+	import { AppRail, AppRailTile } from '@skeletonlabs/skeleton'
 	import { LightSwitch } from '@skeletonlabs/skeleton'
+	import { writable, type Writable } from 'svelte/store'
+
+	const storeValue: Writable<number> = writable(1)
 </script>
 
 <AppShell slotSidebarLeft="bg-surface-500/5 w-56 p-4">

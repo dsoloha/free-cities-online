@@ -1,1 +1,3 @@
-<h1>Personal Attention</h1>
+<div class="container mx-auto p-8 space-y-8">
+	<h1>Personal attention</h1>
+</div>
