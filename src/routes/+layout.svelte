@@ -1,38 +1,30 @@
 <script>
-	import Header from '$components/Header.svelte'
-	import Footer from '$components/Footer.svelte'
-	import '$lib/styles.css'
+	import '@skeletonlabs/skeleton/themes/theme-skeleton.css'
+	import '@skeletonlabs/skeleton/styles/all.css'
+	import '../app.postcss'
 
-	let user = false // currently disabled until I get auth working
+	import { AppShell, AppBar } from '@skeletonlabs/skeleton'
 </script>
 
-<div class="app">
-	{#if user}
-		<Header />
-	{/if}
-	<main>
-		<slot />
-	</main>
-	{#if user}
-		<Footer />
-	{/if}
-</div>
+<AppShell slotSidebarLeft="bg-surface-500/5 w-56 p-4">
+	<svelte:fragment slot="header">
+		<AppBar>
+			<svelte:fragment slot="lead">
+				<h1>Skeleton</h1>
+			</svelte:fragment>
+			<svelte:fragment slot="trail">
+				<a class="btn btn-sm" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+			</svelte:fragment>
+		</AppBar>
+	</svelte:fragment>
 
-<style>
-	.app {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-	}
-
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-</style>
+	<svelte:fragment slot="sidebarLeft">
+		<nav class="list-nav">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/about">About</a></li>
+			</ul>
+		</nav>
+	</svelte:fragment>
+	<slot />
+</AppShell>

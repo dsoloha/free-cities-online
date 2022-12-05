@@ -1,4 +1,5 @@
 <script>
+	import { GradientHeading } from '@skeletonlabs/skeleton'
 	import Section from '$components/Section.svelte'
 	import SignupForm from './SignupForm.svelte'
 	import Spacer from '$components/Spacer.svelte'
@@ -11,7 +12,12 @@
 
 <section>
 	<Section>
-		<h1>Free Cities Online</h1>
+		<GradientHeading
+			tag="h1"
+			direction="bg-gradient-to-r"
+			from="from-primary-500"
+			to="to-accent-500">Free Cities Online</GradientHeading
+		>
 
 		<SignupForm />
 
