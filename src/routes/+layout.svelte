@@ -31,10 +31,9 @@
 		<nav class="list-nav">
 			<ul>
 				<li><a href="/">home</a></li>
-				<li><a href="/about">about</a></li>
+				<li><a href="/manage">manage</a></li>
 				<li><a href="/facilities">facilities</a></li>
 				<li><a href="/locations">locations</a></li>
-				<li><a href="/manage">manage</a></li>
 				<li><a href="/settings">settings</a></li>
 				<li><a href="/social">social</a></li>
 				<li><a href="/tools">tools</a></li>
