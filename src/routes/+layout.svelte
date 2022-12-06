@@ -4,16 +4,26 @@
 	import '../theme.postcss'
 	import '../app.postcss'
 	import '$lib/styles/fonts.css'
-
+	import { page } from '$app/stores'
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton'
-	import { AppRail, AppRailTile } from '@skeletonlabs/skeleton'
 	import { LightSwitch } from '@skeletonlabs/skeleton'
 	import { writable, type Writable } from 'svelte/store'
 
 	const storeValue: Writable<number> = writable(1)
+
+	function matchPathWhitelist(pageUrlPath: string): boolean {
+		// If homepage route
+		if (pageUrlPath === '/') return true
+		// If any blog route
+		if (pageUrlPath.includes('/intro')) return true
+		return false
+	}
+
+	// Disable left sidebar on homepage
+	$: slotSidebarLeft = matchPathWhitelist($page.url.pathname) ? 'w-0' : 'lg:w-auto'
 </script>
 
-<AppShell slotSidebarLeft="bg-surface-500/5 w-56 p-4">
+<AppShell {slotSidebarLeft} slotFooter="p-4">
 	<svelte:fragment slot="header">
 		<AppBar>
 			<svelte:fragment slot="lead">
