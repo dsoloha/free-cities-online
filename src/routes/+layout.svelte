@@ -1,7 +1,7 @@
 <script>
 	import Header from '$components/Header.svelte'
 	import Footer from '$components/Footer.svelte'
-	import '$lib/styles.css'
+	import '$lib/css/styles.css'
 	import '$lib/css/fonts.css'
 
 	let user = false // currently disabled until I get auth working
