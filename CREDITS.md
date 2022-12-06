@@ -9,6 +9,10 @@ well as everyone who put time and effort into making it the best it can be.
 - [SvelteKit](https://kit.svelte.dev)
 - [Vercel](https://vercel.com)
 
+## Frontend
+
+- [Felte](https://felte.dev)
+
 ## Fonts
 
 - [Jost\*](https://indestructibletype.com/Jost.html)
