@@ -8,35 +8,27 @@
 </svelte:head>
 
 <div class="container mx-auto p-8 space-y-8">
-	<GradientHeading
-		tag="h1"
-		direction="bg-gradient-to-br"
-		from="from-primary-500"
-		to="to-accent-500"
-	>
-		Home
-	</GradientHeading>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-	<hr />
-	<section class="card card-body">
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-	</section>
-	<hr />
-	<section class="flex space-x-2">
-		<a
-			class="btn btn-filled-primary"
-			href="https://kit.svelte.dev/"
-			target="_blank"
-			rel="noreferrer">SvelteKit</a
+	<header class="px-4 py-10 md:py-20">
+		<div
+			class="container max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 place-items-center"
 		>
-		<a
-			class="btn btn-filled-accent"
-			href="https://tailwindcss.com/"
-			target="_blank"
-			rel="noreferrer">Tailwind</a
-		>
-		<a class="btn btn-filled-tertiary" href="https://github.com/" target="_blank" rel="noreferrer"
-			>GitHub</a
-		>
-	</section>
+			<div class="space-y-4">
+				<GradientHeading
+					tag="h1"
+					direction="bg-gradient-to-br"
+					from="from-primary-500"
+					to="to-accent-500"
+				>
+					Free Cities Online
+				</GradientHeading>
+				<p class="md:!text-lg">Create the city of your dreams.</p>
+				<nav class="flex space-x-4">
+					<a href="/create/player" class="btn btn-filled-primary">
+						<span>Get Started</span>
+						<span>&rarr;</span>
+					</a>
+				</nav>
+			</div>
+		</div>
+	</header>
 </div>
