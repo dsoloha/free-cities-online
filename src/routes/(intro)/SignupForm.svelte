@@ -5,9 +5,9 @@
 
 <form>
 	<div class="center">
-		<Input name="email" placeholder="email" />
+		<Input name="username" placeholder="username" />
 		<Input name="password" placeholder="password" />
-		<Button focus={true}>Go -></Button>
+		<Button focus>Go -></Button>
 	</div>
 </form>
 
