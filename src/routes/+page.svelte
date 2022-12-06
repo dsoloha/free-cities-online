@@ -1,6 +1,6 @@
 <script>
 	import Section from '$components/Section.svelte'
-	import Login from './(intro)/SignupForm.svelte'
+	import Login from './(intro)/login.svelte'
 </script>
 
 <svelte:head>
