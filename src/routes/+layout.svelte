@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <script lang="ts">
 	import '@skeletonlabs/skeleton/themes/theme-skeleton.css'
 	import '@skeletonlabs/skeleton/styles/all.css'
@@ -38,24 +37,6 @@
 					target="_blank"
 					rel="noreferrer">GitHub</a
 				>
-=======
-<script>
-	import '@skeletonlabs/skeleton/themes/theme-skeleton.css'
-	import '@skeletonlabs/skeleton/styles/all.css'
-	import '../app.postcss'
-
-	import { AppShell, AppBar } from '@skeletonlabs/skeleton'
-</script>
-
-<AppShell slotSidebarLeft="bg-surface-500/5 w-56 p-4">
-	<svelte:fragment slot="header">
-		<AppBar>
-			<svelte:fragment slot="lead">
-				<h1>Skeleton</h1>
-			</svelte:fragment>
-			<svelte:fragment slot="trail">
-				<a class="btn btn-sm" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
->>>>>>> 981c0c5 (Added Skeleton framework)
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
@@ -63,7 +44,6 @@
 	<svelte:fragment slot="sidebarLeft">
 		<nav class="list-nav">
 			<ul>
-<<<<<<< HEAD
 				<li><a href="/">home</a></li>
 				<li><a href="/manage">manage</a></li>
 				<li><a href="/facilities">facilities</a></li>
@@ -71,10 +51,6 @@
 				<li><a href="/settings">settings</a></li>
 				<li><a href="/social">social</a></li>
 				<li><a href="/tools">tools</a></li>
-=======
-				<li><a href="/">Home</a></li>
-				<li><a href="/about">About</a></li>
->>>>>>> 981c0c5 (Added Skeleton framework)
 			</ul>
 		</nav>
 	</svelte:fragment>
