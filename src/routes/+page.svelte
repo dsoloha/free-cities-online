@@ -1,7 +1,6 @@
 <script>
 	import Section from '$components/Section.svelte'
-	import SignupForm from './SignupForm.svelte'
-	import Spacer from '$components/Spacer.svelte'
+	import Login from './(intro)/SignupForm.svelte'
 </script>
 
 <svelte:head>
@@ -13,9 +12,7 @@
 	<Section>
 		<h1>Free Cities Online</h1>
 
-		<SignupForm />
-
-		<Spacer />
+		<Login />
 
 		<p>This site is currently under active development. Check back soon!</p>
 	</Section>
