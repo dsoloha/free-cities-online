@@ -17,7 +17,7 @@
 	<svelte:fragment slot="header">
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<h1>Free Cities Online</h1>
+				<h3>free cities online</h3>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
 				<LightSwitch />
