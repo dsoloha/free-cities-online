@@ -5,7 +5,7 @@
 	import '$lib/css/app.postcss'
 	import '$lib/css/fonts.css'
 
-	import { AppShell, AppBar } from '@skeletonlabs/skeleton'
+	import { AppShell, AppBar, LightSwitch } from '@skeletonlabs/skeleton'
 </script>
 
 <AppShell slotSidebarLeft="bg-surface-500/5 w-56 p-4">
@@ -17,6 +17,7 @@
 				<h3>fcOS</h3>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
+				<LightSwitch />
 				<a class="btn btn-sm" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
 			</svelte:fragment>
 		</AppBar>
