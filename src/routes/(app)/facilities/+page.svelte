@@ -1,1 +1,3 @@
-<h1>Facilities</h1>
+<div class="container mx-auto p-8 space-y-8">
+	<h1>facilities</h1>
+</div>
