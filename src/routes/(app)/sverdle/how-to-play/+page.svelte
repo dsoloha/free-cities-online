@@ -65,7 +65,7 @@
 
 	.close {
 		border-style: solid;
-		border-color: var(--light-border);
+		border-color: var(--theme-light-border);
 	}
 
 	.exact {

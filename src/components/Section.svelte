@@ -4,9 +4,9 @@
 
 <style>
 	section {
-		background-color: var(--light-focus);
+		background-color: var(--theme-light-focus);
 		border-radius: var(--border-radius-large);
-		border: 1px solid var(--light-border);
+		border: 1px solid var(--theme-light-border);
 		color: var(--light-text);
 		padding: 4em;
 		width: 80%;

@@ -2,10 +2,7 @@
 	import { page } from '$app/stores'
 	import '@skeletonlabs/skeleton/themes/theme-skeleton.css'
 	import '@skeletonlabs/skeleton/styles/all.css'
-	import '$lib/css/theme.postcss'
 	import '$lib/css/app.postcss'
-	import '$lib/css/fonts.postcss'
-	import '$lib/css/input.postcss'
 
 	import { AppShell, AppBar, LightSwitch, Modal, Toast, Drawer } from '@skeletonlabs/skeleton'
 

@@ -35,8 +35,8 @@
 		display: flex;
 		justify-content: space-between;
 		padding: 1em;
-		background-color: var(--light-focus);
-		border-bottom: 1px solid var(--light-border);
+		background-color: var(--theme-light-focus);
+		border-bottom: 1px solid var(--theme-light-border);
 	}
 
 	nav {

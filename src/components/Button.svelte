@@ -14,7 +14,7 @@
 	button {
 		background-color: white;
 		border-radius: var(--border-radius-small);
-		border: 1px solid var(--light-border);
+		border: 1px solid var(--theme-light-border);
 		color: var(--light-text);
 		padding: 1em;
 	}
