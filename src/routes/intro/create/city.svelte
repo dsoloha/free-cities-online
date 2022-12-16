@@ -3,5 +3,7 @@
 	<div class="card-body">
 		<input type="text" name="cityName" id="city-name" placeholder="city name" />
 	</div>
-	<a href="/dashboard" class="btn btn-filled-primary">Continue</a>
+	<div class="place-content-center flex w-full">
+		<a href="/dashboard" class="btn btn-filled-primary">Continue</a>
+	</div>
 </div>

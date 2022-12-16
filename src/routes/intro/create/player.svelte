@@ -4,5 +4,7 @@
 		<input type="text" name="firstName" id="first-name" placeholder="first name" />
 		<input type="text" name="lastName" id="last-name" placeholder="last name" />
 	</div>
-	<a href="/dashboard" class="btn btn-filled-primary">Continue</a>
+	<div class="place-content-center flex w-full">
+		<a href="/dashboard" class="btn btn-filled-primary">Continue</a>
+	</div>
 </div>
