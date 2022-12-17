@@ -1,5 +1,5 @@
 <script>
-	import Section from '$components/Section.svelte'
+	import Card from '$components/Card.svelte'
 	import Login from './(intro)/login.svelte'
 </script>
 
@@ -9,13 +9,13 @@
 </svelte:head>
 
 <section>
-	<Section>
+	<Card>
 		<h1>Free Cities Online</h1>
 
 		<Login />
 
 		<p>This site is currently under active development. Check back soon!</p>
-	</Section>
+	</Card>
 </section>
 
 <style>
