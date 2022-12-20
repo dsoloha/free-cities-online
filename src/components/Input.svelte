@@ -8,11 +8,11 @@
 
 <style>
 	input {
-		background-color: var(--light-focus);
+		background-color: var(--theme-light-focus);
 		border-radius: var(--border-radius-small);
-		border: 1px solid var(--light-border);
+		border: 1px solid var(--theme-light-border);
 		box-sizing: content-box;
-		color: var(--light-text);
+		color: var(--theme-font-color-base);
 		max-width: 100%;
 		min-width: fit-content;
 		outline: none;
@@ -33,7 +33,7 @@
 		}
 
 		input:focus {
-			border: 1px solid var(--light-focus);
+			border: 1px solid var(--theme-light-focus);
 		}
 	}
 

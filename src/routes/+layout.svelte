@@ -1,39 +1,61 @@
-<script>
-	import Header from '$components/Header.svelte'
-	import Footer from '$components/Footer.svelte'
-	import '$lib/css/styles.css'
-	import '$lib/css/fonts.css'
+<script lang="ts">
+	import { page } from '$app/stores'
+	import '@skeletonlabs/skeleton/themes/theme-skeleton.css'
+	import '@skeletonlabs/skeleton/styles/all.css'
+	import '$lib/css/app.postcss'
 
-	let user = false // currently disabled until I get auth working
+	import { AppShell, AppBar, LightSwitch, Modal, Toast, Drawer } from '@skeletonlabs/skeleton'
+
+	function matchPathWhitelist(pageUrlPath: string): boolean {
+		// If homepage route
+		if (pageUrlPath === '/') return true
+		// If any intro route
+		if (pageUrlPath.includes('/intro')) return true
+		return false
+	}
+
+	// Disable left sidebar on homepage
+	$: slotSidebarLeft = matchPathWhitelist($page.url.pathname) ? 'w-0' : 'bg-black/5 lg:w-auto'
 </script>
 
-<div class="app">
-	{#if user}
-		<Header />
-	{/if}
-	<main>
-		<slot />
-	</main>
-	{#if user}
-		<Footer />
-	{/if}
-</div>
+<Modal />
+<Toast />
+<Drawer />
 
-<style>
-	.app {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-	}
+<AppShell {slotSidebarLeft} slotFooter="bg-black p-4">
+	<svelte:fragment slot="header">
+		<AppBar>
+			<svelte:fragment slot="lead">
+				<a href="/">
+					<h3>fcOS</h3>
+				</a>
+			</svelte:fragment>
 
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-</style>
+			<svelte:fragment slot="trail">
+				<LightSwitch />
+				<a
+					class="btn btn-sm"
+					href="https://github.com/dsoloha/free-cities-online"
+					target="_blank"
+					rel="noreferrer">GitHub</a
+				>
+			</svelte:fragment>
+		</AppBar>
+	</svelte:fragment>
+
+	<svelte:fragment slot="sidebarLeft">
+		<nav class="list-nav">
+			<ul>
+				<li><a href="/dashboard">overview</a></li>
+				<li><a href="/about">about</a></li>
+				<li><a href="/facilities">facilities</a></li>
+				<li><a href="/locations">locations</a></li>
+				<li><a href="/manage">manage</a></li>
+				<li><a href="/settings">settings</a></li>
+				<li><a href="/social">social</a></li>
+				<li><a href="/tools">tools</a></li>
+			</ul>
+		</nav>
+	</svelte:fragment>
+	<slot />
+</AppShell>

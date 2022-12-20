@@ -1,5 +1,9 @@
-<h1>Tools</h1>
+<div class="container mx-auto p-8 space-y-8">
+	<h1>tools</h1>
 
-<a href="/tools/overview">Overview</a>
-<a href="/tools/personalAttention">Personal Attention</a>
-<a href="/tools/rulesAssistant">Rules Assistant</a>
+	<ul>
+		<li><a href="/tools/overview">overview</a></li>
+		<li><a href="/tools/personalAttention">personal attention</a></li>
+		<li><a href="/tools/rulesAssistant">rules assistant</a></li>
+	</ul>
+</div>
